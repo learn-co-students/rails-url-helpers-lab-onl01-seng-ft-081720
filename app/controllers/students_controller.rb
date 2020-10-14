@@ -6,11 +6,12 @@ class StudentsController < ApplicationController
   end
 
   def show
+  
   end
 
   private
 
     def set_student
-      @student = Student.find(params[:id])
+      @student = Student.find_by_id(params[:id])
     end
 end
